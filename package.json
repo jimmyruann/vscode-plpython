@@ -1,0 +1,48 @@
+{
+  "name": "vscode-plpython",
+  "displayName": "PlPython",
+  "description": "Syntax highlighting for python code in SQL Procedure Language",
+  "version": "0.0.1",
+  "publisher": "jimmyruann",
+  "repository": {
+    "url": "https://github.com/jimmyruann/vscode-plpython"
+  },
+  "keywords": [
+    "plpython3u",
+    "plpython",
+    "plpython2u",
+    "sql"
+  ],
+  "engines": {
+    "vscode": "^1.73.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "plpython",
+        "aliases": [
+          "PlPython",
+          "plpython"
+        ],
+        "extensions": [
+          ".sql"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "plpython",
+        "scopeName": "source.plpython",
+        "path": "./syntaxes/plpython.tmLanguage.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "vsce": "^2.14.0"
+  }
+}
